@@ -1,0 +1,44 @@
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>House Price Predictor</title>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>House price Predictor</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+    
+    	<input type="text" name="Bedrooms" placeholder="No of Bedrooms" required="required" />
+      <input type="text" name="Bathrooms" placeholder="No of Bathrooms" required="required" />
+		  <input type="text" name="sqft_living" placeholder="Carpet area" required="required" />
+      <input type="text" name="sqft_lot" placeholder="Built up area" required="required" />
+      <input type="text" name="floors" placeholder="Floors" required="required" />
+      <input type="text" name="waterfront" placeholder="Waterfront" required="required" />
+      <input type="text" name="view" placeholder="View" required="required" />
+		  <input type="text" name="condition" placeholder="Condition" required="required" />
+      <input type="text" name="sqft_basement" placeholder="Basement area in square feet" required="required" />
+      <input type="text" name="yr_built" placeholder="Year of construction" required="required" />
+      <input type="text" name="yr_renovated" placeholder="Year of Renovation" required="required" />
+      <input type="text" name="Statezip" placeholder="State Zipcode" required="required" />
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
