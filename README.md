@@ -21,9 +21,9 @@ The following inputs are required:
 17.statezip: State zip code
 18.country: Country in which the house is
 
-The project helps you understand the correlation between the different attributes and the house price.It makes use of visualizations and plots making it easier to identify trends.The accuracy of this model is found by callculating RMSE (Root mean square error) and MAE(Mean Absolute Error)
+The project helps you understand the correlation between the different attributes and the house price.It makes use of visualizations and plots making it easier to identify trends.The accuracy of this model is found by callculating RMSE (Root mean square error) and MAE(Mean Absolute Error).
 
-How to run the project:
+EXECUTION STEPS:
 1) Install Python and pip on your system.
 2) Install the pyton virtual environment by running py -v -m venv nameofdirectory in your command prompt.
 3) Activate the virtual environment by the running command nameofdirectory\Scripts\activate
